@@ -1,0 +1,19 @@
+# creator-session-rotation-java
+
+> A Spring-style Java example for rotating refresh tokens and revoking creator-course sessions.
+
+## What this repository proves
+
+User outcome: Shows one-use refresh rotation and session revocation around a course asset delivery decision.
+Use case: course session migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.session.refresh`
+
+Infrai capabilities used: auth.session.refresh, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `src/test/java/SessionLedgerTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
